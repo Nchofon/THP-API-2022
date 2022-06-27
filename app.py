@@ -1,4 +1,6 @@
 import adafruit_mlx90614
+import adafruit_ads1x15
+import time
 import board
 from flask import Flask, jsonify, request
 # Importing modules for the board and mlx. Uncomment in production
@@ -28,7 +30,7 @@ def ambient_temperature():
     return jsonify(massage=mlx.ambient_temperature)
 
 # For Pulse (heart rate)
-@app.route('heart_rate', methods=['GET'])
+@app.route('/heart_rate', methods=['GET'])
 def heart_rate():
     adc = Adafruit_ADS1x15.ADS1015()
     # initialization
