@@ -133,6 +133,23 @@ def heart_rate():
     return jsonify(beats_per_minute)
 
 
+@app.route('/ecg_values', methods=['GET'])
+def ecg_values():
+    i2c = busio.I2C(board.SCL, board.SDA)
+    ads = ADS.ADS1015(i2c)
+    chan = AnalogIn(ads, ADS.P0)
+    finishtime = 0
+
+    ecg_points = []
+
+    starttime = time.perf_counter()
+    while (finishtime-starttime) < 6:
+        ecg_points.append(chan.voltage)
+        finishtime = time.perf_counter()
+
+    return jsonify(ecg_points)
+
+
 
 
 
