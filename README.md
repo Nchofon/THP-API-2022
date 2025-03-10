@@ -1,2 +1,11 @@
-# super-duper-succotash
-Testing things again
+# The Health PAD API
+
+The code-based API for collecting relaying sensor data from medical tablet to custom web interface. 
+
+### Project Abstract
+
+More than ever before, health monitoring is becoming very essential. To have quality health  monitoring systems, we need to be able to properly collect, store, safely, and securely manage  the highly confidential health data of patients. In this work, we seek to improve health data  collection, storage, and management through the design and prototyping of a medical device – The health Pad. This is a tablet-sized medical device with embedded medical sensors which  will greatly facilitate the process of health data collection and subsequently patient monitoring.  This prototype has two core branches: Hardware and Software. We bring together medical  sensors that collect clinical parameters of a patient like temperature, pulse, cardiac rhythm, and  state of the patient. With the help of a microcomputer, we program these sensors to collect the  required data when prompted by the doctor, with the help of a progressive web app that runs  on the Health Pad. A web application is built to enable patients and doctors to create their accounts  online. At the end, verified medical professionals will use this medical device to clerk or  monitor patients, and the medical data from the sensors plus notes from the doctor will be sent  in real-time to the patient’s portal. This will enable the patient to access his past medical data by  simply logging in to his account. Subsequently, when the patient returns to the hospital, with his  permission, the doctor can access his medical history from the table health pad and create new  entries for that day’s consultation or follow-up. To arrive at this, we used hardware tools  including the Raspberry Pi 4, camera, and touch display, the MLX90614 Non-Contact Infrared temperature sensor, DFRobot Pules an ECG sensor. Software tools include the Python  programming language, Flask, and Vue.js. Porteous, and PyCharm IDE. In perspective, we intend  to incorporate smart algorithms into the web app to predict and give early signals based on a  patient’s medical history.  
+**Keywords:** Medical device, Health data, Real time, Monitoring, Medical history.
+
+### Prototype 
+![IMG_20220711_092022_1](https://github.com/user-attachments/assets/73849e47-954e-4ef3-9a0d-1ef7c3fd4eda)
