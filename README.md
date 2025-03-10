@@ -1,4 +1,4 @@
-# The Health PAD API
+# The Health Pad API
 
 The code-based API for collecting relaying sensor data from medical tablet to custom web interface. 
 
